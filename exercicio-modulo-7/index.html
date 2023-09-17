@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício Modulo 7</title>
+    <title>HTML com JS</title>
     <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
     <div class="container">
-        <h1>EBAC counting</h1>
-        <h2>Núremos Importantes</h2>
-        <form id="form-deposito">
-            <input type="text" id="nome-beneficiario" required placeholder="Insira valor A" />
-            <input type="text" id="nome-beneficiario" required placeholder="Insira valor B" />
+        <h1>EBAC Banking</h1>
+        <h2>Verificação de Valores</h2>
+        <form id="form-contas">
+            <input type="text" id="numero-a" required placeholder="Valor menor" />
             <p class="error-message">
-                Valores não correspondem as métricas estabelecidas.
+                Valores não atendem métricas pré-estabelecidas.
             </p>
-            <button id="btn-depositar" type="submit">Enviar</button>
+            <input type="text" id="numero-b" required placeholder="Valor maior" />
+            <!-- <input type="number" id="numeroA" required placeholder="Número A" />
+            <input type="number" id="numeroB" required placeholder="Número B" /> -->
+            <!-- <input type="number" id="valor-deposito" required placeholder="Valor" /> -->
+            <!-- <textarea id="descricao" placeholder="Descrição (opcional)"></textarea> -->
+            <button id="btn-depositar" type="submit">Depositar</button>
 
             <p class="success-message">
-                Formulário enviado com sucesso!
+                O montante de: <b>1000</b> foi enviado para o cliente: <b>Nome do Cliente</b> - Conta: <b>1</b>
             </p>
 
         </form>
